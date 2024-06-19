@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -91,7 +91,7 @@ const Login = () => {
               </div>
               {passwordError && <div className="error error-txt">{passwordError}</div>}
             </div>
-            <div className="pass-txt"><a href="#">Forgot password?</a></div>
+            <div className="pass-txt"><Link to ="">  Forgot password?</Link> </div>
             <input type="submit" value="Login" />
           </form>
         </div>
