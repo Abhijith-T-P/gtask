@@ -1,0 +1,21 @@
+/* App.css */
+.App-Content {
+  display: flex;
+  min-height: 92.5dvh;
+}
+
+main {
+  padding: 20px;
+  width: 100%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+main.shifted {
+  margin-left: 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-left: 0;
+  }
+}
