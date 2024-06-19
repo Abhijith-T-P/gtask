@@ -20,13 +20,7 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => (
         <li><a href="#settings">Settings</a></li>
       </ul>
     </nav>
-    <div className="profile">
-      <img src="profile.jpg" alt="Profile" />
-      <div className="profile-info">
-        <h4>Manjay Gupta</h4>
-        <p>Lead Designer</p>
-      </div>
-    </div>
+    
   </div>
 );
 
