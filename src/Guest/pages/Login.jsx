@@ -91,7 +91,7 @@ const Login = () => {
               </div>
               {passwordError && <div className="error error-txt">{passwordError}</div>}
             </div>
-            <div className="pass-txt"><Link to ="">  Forgot password?</Link> </div>
+            <div className="pass-txt"><Link to ="/">  Forgot password?</Link> </div>
             <input type="submit" value="Login" />
           </form>
         </div>
