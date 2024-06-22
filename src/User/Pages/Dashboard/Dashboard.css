@@ -1,5 +1,3 @@
-
-
 .dashboard {
   display: grid;
   gap: 20px;
@@ -15,7 +13,7 @@
 .card {
   background: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   flex: 1;
   min-width: 200px; /* Ensures cards don't shrink too much */
@@ -36,8 +34,9 @@
 
 .highlight-card p {
   display: flex;
-  justify-content: center;align-items: center;
-  font-size: 10rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
   color: #00796b;
   margin: 0;
 }
@@ -60,8 +59,43 @@
 }
 
 /* Responsive Styles */
+@media (max-width: 1200px) {
+  .highlight-card p {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .highlight-card p {
+    font-size: 5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .top-row, .middle-row, .bottom-row {
     flex-direction: column;
+  }
+
+  .highlight-card p {
+    font-size: 4rem;
+  }
+
+  /* Adjust padding and font size for the graph */
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard {
+    padding: 10px;
+  }
+
+  .highlight-card p {
+    font-size: 3rem;
   }
 }
