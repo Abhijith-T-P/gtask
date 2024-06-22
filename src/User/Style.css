@@ -8,6 +8,7 @@ main {
   padding: 20px;
   width: 100%;
   transition: margin-left 0.3s ease-in-out;
+  font-family: poppins;
 }
 
 main.shifted {

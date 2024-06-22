@@ -1,5 +1,6 @@
 import React from 'react';
 import './Sidebar.css';
+import { Link } from 'react-router-dom';
 
 const Sidebar = ({ isSidebarOpen, toggleSidebar }) => (
   <div className={`sidebar ${isSidebarOpen ? 'open' : 'closed'}`}>
@@ -12,12 +13,14 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => (
             </svg>
           </a>
         </li>
-        <li><a href="#dashboard">Dashboard</a></li>
-        <li><a href="#analytics">Analytics</a></li>
-        <li><a href="#timesheets">Timesheets</a></li>
-        <li><a href="#todo">Todo</a></li>
-        <li><a href="#report">Report</a></li>
-        <li><a href="#settings">Settings</a></li>
+        <li><Link to='./'>Dashboard</Link> </li>
+        <li><Link to='./AnalyticsPage'>Analytics</Link> </li>
+        <li><Link to='./Timesheet'>Timesheets</Link> </li>
+        <li><Link to='./ProjectStatusPage'>ProjectStatusPage</Link> </li>
+        <li><Link to='./ToDoPage'>Todo</Link> </li>
+        <li><Link to='./ReportPage'>Report</Link> </li>
+        <li><Link to='./SettingsPage'>Settings</Link> </li>
+        
       </ul>
     </nav>
     
