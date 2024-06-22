@@ -1,4 +1,6 @@
-/* App.css */
+.app-container{
+  margin: 0;
+}
 .App-Content {
   display: flex;
   min-height: 92.5dvh;
@@ -8,7 +10,6 @@ main {
   padding: 20px;
   width: 100%;
   transition: margin-left 0.3s ease-in-out;
-  font-family: poppins;
 }
 
 main.shifted {

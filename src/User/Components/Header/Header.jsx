@@ -1,5 +1,6 @@
-import React from "react";
-import "./Header.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = ({ onToggleSidebar }) => {
   return (
@@ -11,9 +12,20 @@ const Header = ({ onToggleSidebar }) => {
           </svg>
         </button>
         <div className="logo">
-          TASK<span>Y</span>
+          G<span>TASK</span>
         </div>
       </div>
+      <nav className="navigation">
+        <ul>
+          <li><Link to="./">Dashboard</Link></li>
+          <li><Link to="./AnalyticsPage">Analytics</Link></li>
+          <li><Link to="./Timesheet">Timesheets</Link></li>
+          <li><Link to="./ProjectStatusPage">Project Status</Link></li>
+          <li><Link to="./ToDoPage">Todo</Link></li>
+          <li><Link to="./ReportPage">Report</Link></li>
+          <li><Link to="./SettingsPage">Settings</Link></li>
+        </ul>
+      </nav>
       <div className="user-profile">
         <img src="avatar.jpg" alt="User Avatar" />
         <span>User Name</span>

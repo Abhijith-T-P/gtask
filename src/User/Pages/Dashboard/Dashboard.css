@@ -1,23 +1,15 @@
-/* Dashboard.css */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-  
-}
+
 
 .dashboard {
   display: grid;
   gap: 20px;
   padding: 20px;
-  flex: 1;
-  
 }
 
 .top-row, .middle-row, .bottom-row {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -26,6 +18,39 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   flex: 1;
+  min-width: 200px; /* Ensures cards don't shrink too much */
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.card p, .card ul {
+  color: #666;
+}
+
+.highlight-card {
+  background-color: #e0f7fa;
+}
+
+.highlight-card p {
+  display: flex;
+  justify-content: center;align-items: center;
+  font-size: 10rem;
+  color: #00796b;
+  margin: 0;
+}
+
+.no-decor {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.no-decor li {
+  margin-bottom: 5px;
 }
 
 .activity-images img {

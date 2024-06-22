@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import User from './User/App'
 import Guest from './Guest/App'
+import './App.css'
 
 const App = () => {
   return (

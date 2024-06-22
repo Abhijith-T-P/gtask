@@ -1,0 +1,27 @@
+/* App.css */
+
+/* Apply Poppins font to the whole app */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333; /* Default text color */
+}
+
+/* Global styles */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #007bff; /* Hover color for links */
+}
+
+/* Responsive utility */
+@media (max-width: 768px) {
+  /* Add responsive styles here */
+}
+
+/* Add more specific styles for your components as needed */
