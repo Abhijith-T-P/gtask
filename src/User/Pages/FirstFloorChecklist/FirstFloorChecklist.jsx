@@ -11,7 +11,6 @@ const rooms = [
 
 const FirstFloorChecklist = () => {
   const currentDate = new Date();
-  const currentDayIndex = currentDate.getDay(); // Sunday - Saturday: 0 - 6
   const currentDay = currentDate.toLocaleDateString('en-US', { weekday: 'long' });
   const currentMonth = currentDate.toLocaleDateString('en-US', { month: 'long' });
   const currentDayOfMonth = currentDate.getDate();
