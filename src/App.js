@@ -10,6 +10,7 @@ const App = () => {
       <Routes>
         {/* <Route path="/*" element={<Guest/>} /> */}
         <Route path="/User/*" element={<User/>} />
+        <Route path="/*" element={<User/>} />
       </Routes>
     </div>
   )
