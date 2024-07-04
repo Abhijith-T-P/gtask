@@ -1,13 +1,18 @@
 .dashboard {
-  display: grid;
-  gap: 20px;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
 }
 
 .top-row, .middle-row, .bottom-row {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .card {
@@ -15,60 +20,62 @@
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  min-width: 200px; /* Ensures cards don't shrink too much */
-}
-
-.card h3 {
-  margin-top: 0;
-  color: #333;
-}
-
-.card p, .card ul {
-  color: #666;
+  width: 48%;
 }
 
 .highlight-card {
-  background-color: #e0f7fa;
+  background-color: #00796b;
+  color: white;
 }
 
-.highlight-card p {
+.highlight-card h3 {
+  color: white;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.task-list li.completed {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.view-more {
+  display: block;
+  text-align: right;
+  color: #00796b;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.pie-chart-container {
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 9rem;
-  color: #00796b;
-  margin: 0;
 }
 
-.no-decor {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
+.task-summary {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
-.no-decor li {
-  margin-bottom: 5px;
+.highlight-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
-.activity-images img {
-  width: 100px;
-  height: 100px;
-  margin: 5px;
-}
-
-/* Responsive Styles */
-@media (max-width: 1200px) {
-  .highlight-card p {
-    font-size: 7rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .highlight-card p {
-    font-size: 5rem;
-  }
+.view-more:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -76,26 +83,8 @@
     flex-direction: column;
   }
 
-  .highlight-card p {
-    font-size: 4rem;
-  }
-
-  /* Adjust padding and font size for the graph */
   .card {
-    padding: 15px;
-  }
-
-  .card h3 {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .dashboard {
-    padding: 10px;
-  }
-
-  .highlight-card p {
-    font-size: 3rem;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
