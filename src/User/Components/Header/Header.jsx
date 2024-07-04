@@ -19,8 +19,8 @@ const Header = ({ onToggleSidebar }) => {
         <ul>
           <li><Link to="./">Dashboard</Link></li>
           <li><Link to="./AnalyticsPage">Analytics</Link></li>
-          <li><Link to="./Timesheet">Timesheets</Link></li>
-          <li><Link to="./ProjectStatusPage">Project Status</Link></li>
+          <li><Link to="./Maintenance">Maintenance</Link></li>
+          {/* <li><Link to="./ProjectStatusPage">Project Status</Link></li> */}
           <li><Link to="./ToDoPage">Todo</Link></li>
           <li><Link to="./ReportPage">Report</Link></li>
           <li><Link to="./SettingsPage">Settings</Link></li>

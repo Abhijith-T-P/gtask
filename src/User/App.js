@@ -10,6 +10,10 @@ import SettingsPage from "./Pages/SettingsPage/SettingsPage";
 import ReportPage from "./Pages/ReportPage/ReportPage";
 import AnalyticsPage from "./Pages/AnalyticsPage/AnalyticsPage";
 import ProjectStatusPage from "./Pages/ProjectStatusPage/ProjectStatusPage";
+import FirstFloorChecklist from "./Pages/FirstFloorChecklist/FirstFloorChecklist";
+import ResidentCleaningChecklist from "./Pages/ResidentCleaningChecklist/ResidentCleaningChecklist";
+import OutdoorMaintenance from "./Pages/OutdoorMaintenance/OutdoorMaintenance";
+import Maintenance from "./Pages/Maintenance/Maintenance";
 
 const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -26,12 +30,16 @@ const App = () => {
         <div className="main-content">
           <Routes>
             <Route path="/" element={<Dashboard />} />
-            <Route path="/Timesheet" element={<Timesheet />} />
+            {/* <Route path="/Timesheet" element={<Timesheet />} /> */}
             <Route path="/ToDoPage" element={<ToDoPage />} />
             <Route path="/SettingsPage" element={<SettingsPage />} />
             <Route path="/ReportPage" element={<ReportPage />} />
             <Route path="/AnalyticsPage" element={<AnalyticsPage />} />
-            <Route path="/ProjectStatusPage" element={<ProjectStatusPage />} />
+            {/* <Route path="/ProjectStatusPage" element={<ProjectStatusPage />} /> */}
+            <Route path="/FirstFloorChecklist" element={<FirstFloorChecklist />} />
+            <Route path="/ResidentCleaningChecklist" element={<ResidentCleaningChecklist />} />
+            <Route path="/OutdoorMaintenance" element={<OutdoorMaintenance />} />
+            <Route path="/Maintenance" element={<Maintenance />} />
             
           </Routes>
         </div>

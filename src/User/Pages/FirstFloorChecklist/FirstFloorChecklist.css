@@ -1,0 +1,96 @@
+
+  
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #666;
+  }
+  
+  .day {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  .day h3 {
+    margin-top: 0;
+    color: #00796b;
+  }
+  
+  .day ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .day ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .day ul li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .day button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .day button:hover {
+    background-color: #005f56;
+  }
+  
+  .reminders {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reminders h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .reminders ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .reminders ul li {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .day, .reminders {
+      padding: 15px;
+    }
+  
+    .day button {
+      padding: 8px 16px;
+    }
+  }
+  
