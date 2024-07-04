@@ -7,11 +7,15 @@ const Sidebar = ({ isSidebarOpen, toggleSidebar }) => (
     <nav>
       <ul>
         <li>
-          <a href="#dashboard" onClick={toggleSidebar}>
+          {/* <a href="#dashboard" onClick={toggleSidebar}>
             <svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#e8eaed">
               <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
             </svg>
-          </a>
+          </a> */}
+          <Link  to= "./user" onClick={toggleSidebar}><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#e8eaed">
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
+          </Link>
         </li>
         <li><Link to='./'>Dashboard</Link> </li>
         <li><Link to="./AnalyticsPage">Analytics</Link></li>
